@@ -2,7 +2,7 @@
 
 Minimal static game catalog for GitHub Pages.
 
-Pages: `index.html`, `games/dragonbane.html`, `games/basic-fantasy.html`, `games/shadow-of-the-demon-lord.html`, `games/dnd-5e.html`.
+Pages: `index.html`, `games/dragonbane.html`, `games/basic-fantasy.html`, `games/shadow-of-the-demon-lord.html`, `games/dnd-5e.html`, `games/mothership.html`, `games/call-of-cthulhu.html`.
 
 To publish: GitHub repository **Settings > Pages > Build and deployment > Deploy from a branch**, select `main` and `/(root)`, then save. Website URL: https://kelodec.github.io/game-index/
 
@@ -15,6 +15,9 @@ The gallery and detail pages use locally hosted official cover images. Full imag
 
 - `assets/shadow-of-the-demon-lord-cover.jpg`: Shadow of the Demon Lord cover from [Schwalb Entertainment](https://schwalbentertainment.com/shadow-of-the-demon-lord/). [Original image](https://schwalbentertainment.com/wp-content/uploads/2015/03/Core.jpg).
 - `assets/dnd-5e-cover.jpg`: Dungeons & Dragons 5e cover from [the supplied Board Game Quest review (2014 Player’s Handbook)](https://www.boardgamequest.com/dungeons-dragons-fifth-edition-players-handbook-review/). [Original image](https://www.boardgamequest.com/wp-content/uploads/2014/12/DnD-PHB.jpg).
+
+- `assets/mothership-cover.jpg`: Player's Survival Guide, 1st edition · Tuesday Knight Games, from the [official product page](https://www.tuesdayknightgames.com/products/mothership-players-survival-guide). [Original image](https://www.tuesdayknightgames.com/cdn/shop/files/Mothership_Players_Survival_Guide.jpg?v=1784393129&width=1080).
+- `assets/call-of-cthulhu-cover.gif`: Keeper Rulebook, 7th edition · Chaosium · Cover art by Sam Lamont, from the [official product page](https://www.chaosium.com/call-of-cthulhu-keeper-rulebook-hardcover/). [Original image](https://cdn11.bigcommerce.com/s-9zhx02uo/images/stencil/500x642/products/1882/2119/cha23135_catalog__49263.1586505330.gif?c=2).
 
 Images are unmodified publisher/product images used to identify the games discussed here. Artwork remains the property of its respective rights holders; no ownership or endorsement is claimed. Source links also appear beneath each detail-page cover.
 
