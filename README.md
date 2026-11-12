@@ -23,7 +23,6 @@ Images are unmodified publisher/product images used to identify the games discus
 
 `noindex` metadata and `robots.txt` discourage search indexing but do **not** make this public site private. Do not post sensitive personal information here.
 
-
 ## Calendar
 
-`calendar.html` embeds the gaming group Google Calendar in Eastern Time (`America/New_York`). Manage sessions in Google Calendar; event changes do not require republishing this site. Calendar visibility follows its Google sharing settings. A direct calendar link is provided if embedding is blocked or sign-in is required.
+`calendar.html` contains a blank, built-in monthly calendar with previous/next month navigation, a Today button, and a highlight for the current date in Eastern Time (`America/New_York`). It runs in the browser using `assets/calendar.js`, with no Google embed or external calendar service. Event creation and storage are not implemented yet.

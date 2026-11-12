@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <meta name="description" content="Upcoming sessions for our tabletop gaming group.">
+  <meta name="description" content="The calendar for our tabletop gaming group.">
   <title>Calendar | The Game Table</title>
-  <link rel="stylesheet" href="assets/style.css?v=calendar-1">
+  <link rel="stylesheet" href="assets/style.css?v=calendar-2">
+  <script src="assets/calendar.js?v=calendar-2" defer></script>
 </head>
 <body>
   <header>
@@ -21,21 +22,32 @@
   <main class="wrap">
     <div class="eyebrow">Make time to play</div>
     <h1>Game calendar</h1>
-    <p class="lede">See what's coming up and plan for our next session.</p>
-    <div class="calendar-toolbar">
-      <p>Times shown in Eastern Time (New York).</p>
-      <a class="textlink" href="https://calendar.google.com/calendar/embed?src=a6fee1a313eae3b861729d16b2469a20b67ae45fb4b0c5a075cf46196bfc4668%40group.calendar.google.com&amp;ctz=America%2FNew_York" target="_blank" rel="noopener noreferrer">Open in Google Calendar ↗</a>
-    </div>
-    <section class="calendar-panel" aria-label="Gaming schedule">
-      <iframe
-        class="calendar-embed"
-        title="The Game Table Google Calendar"
-        src="https://calendar.google.com/calendar/embed?src=a6fee1a313eae3b861729d16b2469a20b67ae45fb4b0c5a075cf46196bfc4668%40group.calendar.google.com&amp;ctz=America%2FNew_York"
-        width="800"
-        height="600">
-      </iframe>
+    <p class="lede">A little space for our next adventure.</p>
+    <noscript><p class="calendar-help">Enable JavaScript to view the calendar and browse months.</p></noscript>
+    <section class="calendar" aria-label="Game calendar" hidden>
+      <div class="calendar-toolbar">
+        <h2 id="calendar-month" aria-live="polite" aria-atomic="true"></h2>
+        <div class="calendar-controls" role="group" aria-label="Calendar navigation">
+          <button class="calendar-button" id="calendar-previous" type="button" aria-label="Previous month">←</button>
+          <button class="calendar-button calendar-today-button" id="calendar-today" type="button">Today</button>
+          <button class="calendar-button" id="calendar-next" type="button" aria-label="Next month">→</button>
+        </div>
+      </div>
+      <div class="calendar-panel">
+        <table class="calendar-table" aria-labelledby="calendar-month">
+          <thead><tr>
+            <th scope="col"><abbr title="Sunday">Sun</abbr></th>
+            <th scope="col"><abbr title="Monday">Mon</abbr></th>
+            <th scope="col"><abbr title="Tuesday">Tue</abbr></th>
+            <th scope="col"><abbr title="Wednesday">Wed</abbr></th>
+            <th scope="col"><abbr title="Thursday">Thu</abbr></th>
+            <th scope="col"><abbr title="Friday">Fri</abbr></th>
+            <th scope="col"><abbr title="Saturday">Sat</abbr></th>
+          </tr></thead>
+          <tbody id="calendar-days"></tbody>
+        </table>
+      </div>
     </section>
-    <p class="calendar-help">Can't see the calendar? Open it using the link above. If it's shared privately, sign in to the Google account that has access.</p>
   </main>
   <footer><div class="wrap">Made for our gaming group · Just for fun</div></footer>
 </body>
